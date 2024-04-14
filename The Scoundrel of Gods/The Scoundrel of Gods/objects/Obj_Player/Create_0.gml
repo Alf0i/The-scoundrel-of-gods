@@ -1,4 +1,7 @@
 spd = 15;
+life = 200;
+
+
 right = 0;
 left = 0;
 up = 0;

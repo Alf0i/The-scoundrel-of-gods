@@ -1,3 +1,6 @@
+show_debug_message(life);
+
+
 //MOVIMENT
 #region
 right = 0;

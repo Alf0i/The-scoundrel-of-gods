@@ -34,7 +34,12 @@
   },
   "name":"The Scoundrel of Gods",
   "resources":[
+    {"id":{"name":"Obj_camera","path":"objects/Obj_camera/Obj_camera.yy",},},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
+    {"id":{"name":"Obj_suditos_aliados","path":"objects/Obj_suditos_aliados/Obj_suditos_aliados.yy",},},
+    {"id":{"name":"Obj_suditos_inimigos","path":"objects/Obj_suditos_inimigos/Obj_suditos_inimigos.yy",},},
+    {"id":{"name":"Obj_suditos","path":"objects/Obj_suditos/Obj_suditos.yy",},},
+    {"id":{"name":"Obj_deus_inimigo","path":"objects/Obj_deus_inimigo/Obj_deus_inimigo.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
