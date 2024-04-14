@@ -1,4 +1,4 @@
-spd = 5;
+spd = 15;
 right = 0;
 left = 0;
 up = 0;
