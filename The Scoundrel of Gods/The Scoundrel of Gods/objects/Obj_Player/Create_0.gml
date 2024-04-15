@@ -1,4 +1,5 @@
-
+inicial_localx = x
+inicial_localy = y
 
 spd = 5;
 life = 200;

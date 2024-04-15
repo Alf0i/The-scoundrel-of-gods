@@ -1,20 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_mouse",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_area",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_mouse",
+  "name":"Obj_area",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite9",
+    "path":"sprites/Sprite9/Sprite9.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

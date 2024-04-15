@@ -1,29 +1,37 @@
+depth = -y;
 
+if(self.life<= 0)instance_destroy(self,true);
 
 // Following Player
  #region
+ if(instance_exists(obj)){
+ if(can_follow_player){
 if(distance_to_object(obj) >= 5){
-if(obj.x < x) x = lerp(x, obj.x, 0.01);
-else if(obj.x > x)  x = lerp(x, obj.x, 0.01);
+if(obj.x < x) x = lerp(x, obj.x, 0.005);
+else if(obj.x > x)  x = lerp(x, obj.x, 0.005);
 
-if(obj.y < y) y = lerp(y, obj.y , 0.01);
-else if(obj.y > y) y = lerp(y, obj.y , 0.01);
+if(obj.y < y) y = lerp(y, obj.y , 0.005);
+else if(obj.y > y) y = lerp(y, obj.y , 0.005);
 }
+ }
+ 
+ //Defending soldiers
+ else{
+	 
+ }
+	 }
 #endregion
 
 //Punch System
 #region
+ if(instance_exists(obj)){
 if(distance_to_object(obj) <= 150 && !saw_player)
 saw_player = true;
 if(saw_player) {
 if(!try_to_punch){
-/*
-punch_count++;
 
-if(punch_count >= 50){
-punch_count = 0;*/
 try_to_punch = true;
-//}
+
 }
 else {
 	var this_color = image_blend
@@ -50,7 +58,7 @@ punched = false;
 saw_player = false;
 }
 }
-	
+ }	
 #endregion
 
 // Player's first hability

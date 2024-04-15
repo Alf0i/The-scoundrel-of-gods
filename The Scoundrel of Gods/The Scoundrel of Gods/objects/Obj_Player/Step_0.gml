@@ -1,7 +1,18 @@
-show_debug_message("x: {0} // y: {0}" , mouse_x, mouse_y);
+depth = -y;
 
+if(self.life<= 0) room_goto_next();
 
-//MOVIMENT
+//RESTART LOCAL
+#region
+if(instance_exists(Obj_area)){
+if(distance_to_object(Obj_area) > 0){
+x = inicial_localx
+y = inicial_localy
+}
+}
+#endregion
+
+//MOVIMENT AND COLLISION
 #region
 right = 0;
 left = 0;
@@ -18,12 +29,13 @@ vert = down - up;
 
 
 //NORMALIZING AND COLLISION
+if(instance_exists(Obj_colisao)){
 if(hor != 0 || vert != 0){
 
 var _dir = point_direction(0,0,hor,vert);
 xadd = lengthdir_x(spd,_dir);
 yadd = lengthdir_y(spd,_dir);
-#endregion
+
 
 //HORIZONTAL COLLISION
 #region
@@ -50,7 +62,8 @@ if(place_meeting(x, y + yadd,Obj_colisao)){
 x += xadd;
 y += yadd;
 }
-
+}
+#endregion
 
 //HABILITY 1
 #region

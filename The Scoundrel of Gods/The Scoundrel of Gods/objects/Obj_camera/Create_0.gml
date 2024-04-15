@@ -5,4 +5,4 @@ height = camera_get_view_height(view_camera[0]);
 camera_set_view_target(view_camera[0],obj.id);
 
 
-window_set_fullscreen(true);
+//window_set_fullscreen(true);
