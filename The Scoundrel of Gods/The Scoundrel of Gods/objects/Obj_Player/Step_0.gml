@@ -1,4 +1,4 @@
-show_debug_message(life);
+show_debug_message("x: {0} // y: {0}" , mouse_x, mouse_y);
 
 
 //MOVIMENT
@@ -57,16 +57,15 @@ y += yadd;
 
 if(can_use_hab1){
 if(keyboard_check(ord("Q"))){
-
-
-if(mouse_check_button(mb_left) && distance_to_point(mouse_x,mouse_y) <= 200){
 	
-var _inst = instance_create_layer(mouse_x,mouse_y,"Habilities",Obj_hab1);
+if(mouse_check_button(mb_left)){
+var _inst = instance_create_layer(mouse_x, mouse_y, "Habilities", Obj_hab1);
 _inst.image_xscale = 3;
 _inst.image_yscale = 3;
 has_hab1_finished = false;
 can_use_hab1 = false;
 can_count_hab1 = true;
+
 }
 } 
 }
