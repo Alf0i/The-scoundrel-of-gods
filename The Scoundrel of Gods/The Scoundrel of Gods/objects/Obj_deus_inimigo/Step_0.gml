@@ -1,38 +1,43 @@
 
 
 // Following Player
-#region
+ #region
 if(distance_to_object(obj) >= 5){
-if(obj.x < x) x -= spd;
-else if(obj.x > x) x += spd;
+if(obj.x < x) x = lerp(x, obj.x, 0.01);
+else if(obj.x > x)  x = lerp(x, obj.x, 0.01);
 
-if(obj.y < y) y -= spd;
-else if(obj.y > y) y += spd;
+if(obj.y < y) y = lerp(y, obj.y , 0.01);
+else if(obj.y > y) y = lerp(y, obj.y , 0.01);
 }
 #endregion
 
 //Punch System
 #region
-if(distance_to_object(obj) <= 10) {
+if(distance_to_object(obj) <= 150 && !saw_player)
+saw_player = true;
+if(saw_player) {
 if(!try_to_punch){
-
+/*
 punch_count++;
 
 if(punch_count >= 50){
-punch_count = 0;
+punch_count = 0;*/
 try_to_punch = true;
-}
+//}
 }
 else {
+	var this_color = image_blend
 punch_count++;
+image_blend = c_green;
 if(punch_count >= 100){
 	punch_count = 0;
 	punched = true;
+	image_blend = c_white;
 }
 }
 	
 if (punched){
-	
+	if( distance_to_object(obj) <= 120){
 	obj.life -= 30;
 	
 	if(obj.x < x) obj.x -= 40;
@@ -40,13 +45,13 @@ if (punched){
 
 	if(obj.y < y) obj.y -= 40;
 	else if(obj.y > y) obj.y += 40;
-
+	}
 punched = false;
+saw_player = false;
 }
 }
 	
 #endregion
-
 
 // Player's first hability
 #region
