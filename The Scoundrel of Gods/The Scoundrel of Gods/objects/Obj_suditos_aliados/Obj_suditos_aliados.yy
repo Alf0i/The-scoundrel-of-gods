@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"Obj_suditos_aliados",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"Obj_suditos_aliados",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_sudito",
+    "path":"objects/Obj_sudito/Obj_sudito.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite4",
+    "path":"sprites/Sprite4/Sprite4.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_suditos",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_colisao",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_suditos",
+  "name":"Obj_colisao",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",

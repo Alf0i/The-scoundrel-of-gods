@@ -1,3 +1,4 @@
+atracao = 0;
 obj = Obj_Player;
 spd = 1;
 

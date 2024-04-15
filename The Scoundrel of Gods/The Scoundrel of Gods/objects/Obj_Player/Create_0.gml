@@ -1,4 +1,6 @@
-spd = 15;
+
+
+spd = 5;
 life = 200;
 
 
@@ -11,3 +13,13 @@ hor = 0;
 vert = 0;
 xadd = 0;
 yadd = 0;
+
+can_use_hab1 = true;
+hab1_count = 0;
+can_count_hab1 =false;
+has_hab1_finished = false;
+
+can_use_hab2 = true;
+hab2_count = 0;
+can_count_hab2 =false;
+has_hab2_finished = false;

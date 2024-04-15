@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"Obj_suditos_inimigos",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"Obj_suditos_inimigos",
   "overriddenProperties":[],
@@ -10,8 +12,8 @@
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"Obj_suditos",
-    "path":"objects/Obj_suditos/Obj_suditos.yy",
+    "name":"Obj_sudito",
+    "path":"objects/Obj_sudito/Obj_sudito.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
