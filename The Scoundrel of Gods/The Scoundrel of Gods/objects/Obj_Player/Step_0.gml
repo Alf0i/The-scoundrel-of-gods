@@ -19,10 +19,31 @@ left = 0;
 up = 0;
 down = 0;
 
-if(keyboard_check(ord("W"))) up = 1;
-if(keyboard_check(ord("S"))) down = 1;
-if(keyboard_check(ord("A"))) left = 1;
-if(keyboard_check(ord("D"))) right = 1;
+
+if(keyboard_check(ord("W"))){ up = 1;
+sprite_index = last_sprite;
+}
+if(keyboard_check(ord("S"))) {down = 1;
+sprite_index = last_sprite;
+}
+if(keyboard_check(ord("A"))) {left = 1;
+	sprite_index = Muse_walk_L;
+	last_sprite = Muse_walk_L;
+	}
+if(keyboard_check(ord("D"))) {right = 1;
+	sprite_index = Muse_walk_R;
+	last_sprite = Muse_walk_R;
+	}
+if(keyboard_check(vk_nokey)){
+	if(keyboard_check_released(ord("A"))) {sprite_index = Muse_idle_L;
+		last_idle_sprite = sprite_index;
+		}
+	else if(keyboard_check_released(ord("D"))) {sprite_index = Muse_idle_R;
+		last_idle_sprite = sprite_index;
+		}
+	else if(keyboard_check_released(ord("W"))) sprite_index = last_idle_sprite;
+	else if(keyboard_check_released(ord("S"))) sprite_index = last_idle_sprite;
+}
 
 hor = right - left;
 vert = down - up;

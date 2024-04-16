@@ -11,20 +11,20 @@ if(referece != aux_selec || selec_aliado == 0){
 if(point_distance(mouse_x,mouse_y, referece.x,referece.y) <= 32){
 	if(mouse_check_button(mb_right)){
 	Obj_suditos_aliados.image_blend = c_white;
+	aux_selec = selec_aliado;
 selec_aliado = referece;
-aux_selec = selec_aliado;
 selec_aliado.image_blend = c_green;
 	}
 }
 }
-else{
-	if(point_distance(mouse_x,mouse_y, referece.x,referece.y) > 32){
+
+if(point_distance(mouse_x,mouse_y, referece.x,referece.y) > 32){
 	if(mouse_check_button(mb_right)){
 selec_aliado = 0;
 Obj_suditos_aliados.image_blend = c_white;
 	}
 }
-}
+
 
 #endregion
 

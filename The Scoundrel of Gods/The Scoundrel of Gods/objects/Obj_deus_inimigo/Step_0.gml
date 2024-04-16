@@ -1,7 +1,8 @@
 depth = -y;
 
-if(self.life<= 0)instance_destroy(self,true);
-
+if(self.life<= 0){instance_destroy(self,true);
+room_goto_next();
+}
 // Following Player
  #region
  if(instance_exists(obj)){

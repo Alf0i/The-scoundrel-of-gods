@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite4",
-    "path":"sprites/Sprite4/Sprite4.yy",
+    "name":"warrior_idle",
+    "path":"sprites/warrior_idle/warrior_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
